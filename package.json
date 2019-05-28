@@ -1,0 +1,27 @@
+{
+  "name": "simple-game",
+  "version": "0.0.1",
+  "description": "Its a game",
+  "main": "game/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "local": "http-server -a localhost -p 8123 -c-1 ./game",
+    "dev": "webpack --watch --mode development & npm run local",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Jokinen",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "http-server": "^0.11.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

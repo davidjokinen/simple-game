@@ -1,21 +1,29 @@
-
-const Component = require('./component');
+import  { 
+  Camera,
+  Energy,
+  FollowPath,
+  Grid,
+  Location,
+  Movement,
+  Shape,
+} from '@spacegame/components';
 
 let regesteredComponents = {};
 const register = (newClass) => {
   regesteredComponents[newClass.name()] = newClass;
 }
-register(require('./components/shape'));
-register(require('./components/location'));
-register(require('./components/movement'));
-register(require('./components/camera'));
-register(require('./components/grid'));
+register(Shape);
+register(Location);
+register(Movement);
+register(Camera);
+register(Grid);
+register(FollowPath);
 
 const COMPONENTS = regesteredComponents;
 
 var id = 0;
 
-class Entity {
+export default class Entity {
   constructor(data) {
     this.id = id++;
     this.components = [];
@@ -43,5 +51,3 @@ class Entity {
     }
   }
 }
-
-module.exports = Entity;

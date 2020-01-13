@@ -1,6 +1,6 @@
-const Component = require('../component');
+import Component from './component';
 
-class Camera extends Component {
+export default class Camera extends Component {
   static name() {
     return 'camera'
   }
@@ -12,5 +12,3 @@ class Camera extends Component {
     };
   }
 }
-
-module.exports = Camera;

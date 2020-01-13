@@ -1,6 +1,6 @@
-const Component = require('../component');
+import Component from './component';
 
-class Shape extends Component {
+export default class Shape extends Component {
   static name() {
     return 'shape'
   }
@@ -12,5 +12,3 @@ class Shape extends Component {
     };
   }
 }
-
-module.exports = Shape;

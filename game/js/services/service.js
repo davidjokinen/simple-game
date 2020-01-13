@@ -1,6 +1,5 @@
 
-
-class Service {
+export default class Service {
   static name() {
     throw new Error('overload please'); 
   }
@@ -9,5 +8,3 @@ class Service {
     
   }
 }
-
-module.exports = Service;

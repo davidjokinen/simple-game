@@ -1,6 +1,6 @@
-const Component = require('../component');
+import Component from './component';
 
-class Movement extends Component {
+export default class Movement extends Component {
   static name() {
     return 'movement'
   }
@@ -15,5 +15,3 @@ class Movement extends Component {
     };
   }
 }
-
-module.exports = Movement;

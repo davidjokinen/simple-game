@@ -1,6 +1,7 @@
-const CONSTANTS = require('../constants');
+// const CONSTANTS = require('../constants');
+import { Constants as CONSTANTS } from '@spacegame/core';
 
-function renderBackground(world) {
+export default function renderBackground(world) {
   const { camera, ctx } = world;
   if (!camera) return;
 
@@ -36,4 +37,4 @@ function renderBackground(world) {
   ctx.stroke();
 }
 
-module.exports = renderBackground;
+// module.exports = renderBackground;

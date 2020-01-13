@@ -1,7 +1,7 @@
-const Service = require('../service');
-const CONSTANTS = require('../constants');
+import Service from './service';
+import { Constants as CONSTANTS } from '@spacegame/core';
 
-class GridMovement extends Service {
+export default class GridMovement extends Service {
   static name() {
     return 'grid'; 
   }
@@ -48,5 +48,3 @@ class GridMovement extends Service {
     }
   }
 }
-
-module.exports = GridMovement;

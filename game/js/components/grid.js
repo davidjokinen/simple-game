@@ -1,6 +1,6 @@
-const Component = require('../component');
+import Component from './component';
 
-class Grid extends Component {
+export default class Grid extends Component {
   static name() {
     return 'grid'
   }
@@ -14,5 +14,3 @@ class Grid extends Component {
     };
   }
 }
-
-module.exports = Grid;

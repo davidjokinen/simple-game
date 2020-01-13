@@ -1,4 +1,4 @@
-class Component {
+export default class Component {
   static name() {
     throw new Error('overload please'); 
   }
@@ -7,5 +7,3 @@ class Component {
     return {};
   }
 }
-
-module.exports = Component;

@@ -1,8 +1,8 @@
-const Service = require('../service');
+import Service from './service';
 
 let ctx = null;
 
-class Render extends Service {
+export default class Render extends Service {
   static name() {
     return 'render'; 
   }
@@ -58,5 +58,3 @@ class Render extends Service {
     }
   }
 }
-
-module.exports = Render;

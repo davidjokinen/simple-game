@@ -1,38 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import Scene from './scene';
 
 import { Entity, Mouse } from "@spacegame/core";
-import { Map, renderBackground } from '@spacegame/map';
-import { Render, Move, GridMovement, MoveEnitity } from "@spacegame/services"
-import {
-  CameraInfo,
-  MouseInfo,
-  EntitiesList,
-  SelectedEntity,
-} from '@spacegame/ui';
+
+import { Map, renderBackground } from "@spacegame/map";
+
+import { Render, Move, GridMovement, MoveEnitity } from "@spacegame/services";
+
+// import Level from "@spacegame/level"
 
 const renderUI = (world) => {
-  ReactDOM.render(
-    <div>
-      <CameraInfo camera={world.camera} mouse={world.mouse}/>
-      <MouseInfo mouse={world.mouse} />
-      <EntitiesList entities={world.entities} focus={world.focusedElement} />
-    </div>
-    ,
-    document.getElementById('top-left')
-  );
-  ReactDOM.render(
-    <div>
-      <SelectedEntity  focus={world.focusedElement} />
-    </div>
-    ,
-    document.getElementById('bottom-left')
-  );
 };
 
-export default class TestScene extends Scene {
+export default class LoadMapScene extends Scene {
   constructor() {
     super();
     this.world = {};

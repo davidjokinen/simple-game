@@ -1,6 +1,4 @@
-
-
-class Chunk {
+export default class Chunk {
   constructor(data) {
     this.data = data.data;
     this.height = data.height;
@@ -27,18 +25,18 @@ class Chunk {
     const chunkPosX = this.x*tileSize;
     const chunkPosY = this.y*tileSize;
 
-    const colorList = ["#66aaFF", "#66FFFF", "#66aaAA", "#AAaaFF"];
+    const colorList = ['aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 
+    'lime', 'maroon', 'navy', 'olive', 'orange', 'purple', 'red', 
+    'silver', 'teal', 'white', 'yellow'];
     
     for (let x=0; x<this.width; x++) {
       for (let y=0; y<this.height; y++) {
         const posX = (x*tileSize + chunkPosX - cameraX)*cameraScale;
         const posY = (y*tileSize + chunkPosY - cameraY)*cameraScale;
-        const index = this.data[(x+y*this.width%colorList.length)];
-        ctx.fillStyle = colorList[index];
+        const index = this.data[(x+y*this.width)];
+        ctx.fillStyle = colorList[index%colorList.length];
         ctx.fillRect(posX, posY, tileSize*cameraScale-1, tileSize*cameraScale-1);
       }
     }
   }
 }
-
-module.exports = Chunk;

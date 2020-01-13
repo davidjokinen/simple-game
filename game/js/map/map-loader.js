@@ -1,7 +1,7 @@
-const Layer = require('./layer');
-const Chunk = require('./chunk');
+import Layer from './layer';
+import Chunk from './chunk';
 
-function createMap(data) {
+export default function createMap(data) {
   let outputLayers = [];
   data.layers.map((layer) => {
     let newLayer = new Layer(layer);
@@ -14,5 +14,3 @@ function createMap(data) {
   });
   return outputLayers;
 }
-
-module.exports = createMap;

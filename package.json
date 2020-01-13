@@ -21,6 +21,18 @@
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.6.0",
+    "@spacegame/components": "file:game/js/components",
+    "@spacegame/core": "file:game/js/core",
+    "@spacegame/map": "file:game/js/map",
+    "@spacegame/scenes": "file:game/js/scenes",
+    "@spacegame/services": "file:game/js/services",
+    "@spacegame/ui": "file:game/js/ui",
+    "babel-preset-react": "^6.24.1",
+    "crc-32": "^1.2.0",
+    "pixi.js": "^5.2.0",
+    "png-chunks": "^1.0.0",
+    "png-chunks-extract": "^1.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

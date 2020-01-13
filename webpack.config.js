@@ -3,34 +3,32 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: {
-    index: './game/index.js'
+    'game':	path.join(__dirname, 'game', 'index.js'),
+    // 'game/js/ui':		path.join(__dirname, 'game/js/ui', 'index.js'),
+    // 'game/js/components':		path.join(__dirname, 'game/js/components', 'index.js'),
+    // 'game/js/core':		path.join(__dirname, 'game/js/core', 'index.js'),
+    // 'game/js/map':		path.join(__dirname, 'game/js/map', 'index.js'),
+    // 'game/js/scenes':		path.join(__dirname, 'game/js/components', 'index.js'),
+    // 'game/js/services':		path.join(__dirname, 'game/js/services', 'index.js'),
   },
   resolve: {
     extensions: ['.jsx', '.js', '.json']
   },
   output: {
-    path: path.resolve(__dirname, 'game/dist'),
-    filename: '[name].js'
+    path: path.resolve(__dirname),
+		publicPath: '/dist/',
+		filename: '[name]/dist/index.js'
   },
   devtool: 'source-map',
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
-              [
-                "@babel/preset-env",
-                {
-                  targets: {
-                    'ie': 10
-                  }
-                }
-              ]
-            ]
+            "presets": ["@babel/preset-env", "@babel/preset-react"]
           }
         }
       }

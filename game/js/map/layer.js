@@ -1,6 +1,4 @@
-
-
-class Layer {
+export default class Layer {
   constructor(data) {
     this.chunks = [];
     this.height = data.height;
@@ -25,5 +23,3 @@ class Layer {
     });
   }
 }
-
-module.exports = Layer;

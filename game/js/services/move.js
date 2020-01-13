@@ -1,6 +1,6 @@
-const Service = require('../service');
+import Service from './service';
 
-class Move extends Service {
+export default class Move extends Service {
   static name() {
     return 'move'; 
   }
@@ -26,11 +26,9 @@ class Move extends Service {
         const vx = entity.movement.vx;
         const vy = entity.movement.vy;
 
-        entity.location.x += vx;
-        entity.location.y += vy;
+        entity.location.x += ~~vx;
+        entity.location.y += ~~vy;
       }
     }
   }
 }
-
-module.exports = Move;

@@ -1,5 +1,5 @@
 
-class Keyboard {
+export default class Keyboard {
 	constructor() {
 		this.key = [];
 		for(let i =0;i<255;i++)
@@ -28,5 +28,3 @@ class Keyboard {
 	}
 
 }
-
-module.exports = Keyboard;

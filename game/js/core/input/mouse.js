@@ -1,5 +1,5 @@
  
-class Mouse {
+export default class Mouse {
 	constructor(div) {
 		this.x = 0;
 		this.y = 0;
@@ -93,5 +93,3 @@ class Mouse {
 			this.onZoom[i](e);
 	}
 }
-
-module.exports = Mouse;

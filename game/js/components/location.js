@@ -1,6 +1,6 @@
-const Component = require('../component');
+import Component from './component';
 
-class Location extends Component {
+export default class Location extends Component {
   static name() {
     return 'location'
   }
@@ -13,5 +13,3 @@ class Location extends Component {
     };
   }
 }
-
-module.exports = Location;

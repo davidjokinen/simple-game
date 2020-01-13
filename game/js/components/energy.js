@@ -1,6 +1,6 @@
-const Component = require('../component');
+import Component from './component';
 
-class Energy extends Component {
+export default class Energy extends Component {
   static name() {
     return 'energy'
   }
@@ -14,5 +14,3 @@ class Energy extends Component {
     };
   }
 }
-
-module.exports = Energy;

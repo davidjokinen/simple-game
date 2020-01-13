@@ -3,12 +3,8 @@ import ReactDOM from 'react-dom';
 import Scene from './scene';
 
 import { Entity, Mouse } from "@spacegame/core";
-
 import { Map, renderBackground } from "@spacegame/map";
-
 import { Render, Move, GridMovement, MoveEnitity } from "@spacegame/services";
-
-// import Level from "@spacegame/level"
 
 const renderUI = (world) => {
 };

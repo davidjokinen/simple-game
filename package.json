@@ -12,16 +12,16 @@
   },
   "author": "David Jokinen",
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
+    "@babel/core": "^7.8.0",
+    "@babel/preset-env": "^7.8.2",
+    "@babel/preset-react": "^7.8.0",
+    "babel-loader": "^8.0.6",
     "http-server": "^0.11.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0"
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "@material-ui/core": "^4.6.0",
+    "@material-ui/core": "^4.8.3",
     "@spacegame/components": "file:game/js/components",
     "@spacegame/core": "file:game/js/core",
     "@spacegame/map": "file:game/js/map",
@@ -33,7 +33,7 @@
     "pixi.js": "^5.2.0",
     "png-chunks": "^1.0.0",
     "png-chunks-extract": "^1.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
